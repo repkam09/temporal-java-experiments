@@ -1,0 +1,6 @@
+node_modules
+build
+.env
+**/*/*.class
+.DS_Store
+demo-app/target/
