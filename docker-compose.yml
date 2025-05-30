@@ -63,7 +63,7 @@ services:
       - .env
     environment:
       - TEMPORAL_ADDRESS=temporal:7233
-    command: npm run start:container
+    command: mvn compile exec:java -Dexec.mainClass="demo.DemoWorker"
     networks:
       - temporal-network
 

@@ -11,7 +11,7 @@ public class DemoWorker {
     public static void main(String[] args) {
 
         WorkflowServiceStubsOptions serviceOptions = WorkflowServiceStubsOptions.newBuilder()
-                .setTarget("localhost:7233")
+                .setTarget("temporal:7233")
                 .build();
 
         WorkflowServiceStubs service = WorkflowServiceStubs.newServiceStubs(serviceOptions);
